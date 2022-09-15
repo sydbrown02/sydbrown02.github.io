@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(235, 81, 25);
+}
+h1{
+    color:rgb(255, 255, 255);
+    border: solid;
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    line-height: 120px;
+    
+}
+#Tucker{
+    width: 50%; 
+    margin-left: 2%;
+}
+#Snow{
+    width: 46%;
+   
+}
+h3{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.intro{
+    font-size: 30px;
+    text-align: left;
+    margin: 50px;
+}
+.extra{
+    font-size: 30px;
+    text-align: left;
+    margin: 50px;
+
+}
+.important {
+color: rgb(255, 229, 32);
+}
+.email{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    background-position: center;
+    width: 20%;
+    margin-left: 40%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.email:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    
+}
+.email:active{
+    color: yellow;
+    font-size: 60px;
+}
