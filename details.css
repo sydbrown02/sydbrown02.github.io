@@ -1,0 +1,98 @@
+/* Hamburger Menu Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.menu-button {
+  position: fixed;
+  z-index: 2; /* Move button to top within flexbox */
+  top: 20px;
+  left: 20px;
+  padding: 10px;
+  /* Remove border and set background color to white */
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  /* Show the button on all screen sizes */
+  display: block;
+}
+
+.menu-button .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: rgb(179, 24, 24);
+  margin: 5px auto;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  order: 0;
+  left: -100%; /* Hide sidebar initially */
+  width: 200px;
+  height: 100vh;
+  background-color: #181818;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%; /* Hide sidebar initially */
+  width: 200px;
+  height: 100vh;
+  background-color: #202020;
+  transition: all 0.7s ease-in-out;
+  display: flex; /* Make sidebar a flex container */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 70px auto;
+  margin-left: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+}
+
+#sidebar li {
+  margin: 15px 0;
+}
+
+#sidebar a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+#sidebar.active {
+  left: 0; /* Show sidebar on button click */
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .menu-button {
+    display: block; /* Show hamburger button on large screens */
+  }
+
+  #sidebar {
+    width: 250px; /* Wider sidebar on large screens */
+  }
+}
+/* Rest of your styles for product image, content, etc. */
+
+.container {
+  display: flex; /* Allow image and content side-by-side */
+}
+
+.product-image {
+  width: 900px;
+  margin-left: -170px;
+  margin-top: -90px;
+}
